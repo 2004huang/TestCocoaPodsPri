@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TestCocoaPod_Example' do
+  pod 'TestCocoaPod', :path => '../'
+
+  target 'TestCocoaPod_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
